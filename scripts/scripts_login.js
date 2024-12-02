@@ -1,7 +1,7 @@
 function login() {
     var username = document.querySelector(".username").value;
     var password = document.querySelector(".password").value;
-    if (username == "kali" && password == "kali") {
+    if (username == "kiqx" && password == "xqik") {
         window.location.href = "https://k19x.github.io/kiq-kiq/kali/www/kali.html";
     } else {
         alert("Clique em 'Cancel' para ajuda.");
