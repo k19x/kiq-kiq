@@ -60,6 +60,18 @@ function cert3() {
     window.open("certificates\\certificate-5.pdf")
 }
 
+function cert4() {
+    window.open("https://candidate.speedexam.net/certificate.aspx?SSTATE=am4131EniU8ntjp4bO5mXQsjoxYVPPNzH8xxmHrExVYd1ObdJnvmtHhZH6z9L6MOWl6oPVpM6Uv0mSwhKdpnLQHjkCwwKKmz30wpSGgiKqw=")
+}
+
+function cert5() {
+    window.open("https://candidate.speedexam.net/certificate.aspx?SSTATE=am4131EniU8ntjp4bO5mXZUMCaPZeD0fn3izylSN62cG1br3Db7x10GLE62NY2AGohSfTGBStbPNoUzq4oEurLDJf0HFM9SYhnw23GdIl98=")
+}
+
+function cert6() {
+    window.open("https://pdf.credential.net/0t54iuvp_1733174704724.pdf")
+}
+
 window.onload = function() {
     var disclaimer = document.getElementsByClassName("disclaimer")[0];
     disclaimer.parentNode.removeChild(disclaimer);
