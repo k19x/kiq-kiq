@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="scripts/scripts.js"></script>
+    <title>kali㉿kali</title>
+    <style>
+        body {
+            background: url("https://raw.githubusercontent.com/dorianpro/kali-linux-wallpapers/master/kali-linux-wallpaper-v4.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            /* height: 100vh; */
+            /* font-family: sans-serif; */
+            /* overflow: hidden; */
+        }
+        
+        .navbar {
+            overflow: hidden;
+            background-color: rgb(28, 29, 36);
+            width: 100%;
+            border-radius: 5px;
+            height: 38px;
+            /* position: fixed; */
+        }
+        
+        .navbar a {
+            float: left;
+            display: block;
+            color: rgb(238, 238, 236);
+            text-align: center;
+            padding: 8px;
+            text-decoration: none;
+            font-size: 17px;
+            text-align: center;
+        }
+        
+        .navbar a:hover {
+            /* background-color: rgb(22, 23, 29); */
+            border: 1px solid rgb(30, 134, 255, .6);
+            /* color: rgb(238, 238, 236); */
+            border-radius: 3px;
+        }
+        
+        .screen {
+            width: 20px;
+            /* height: 20mm; */
+            /* text-align-last: right; */
+        }
+        
+        .dropbtn {
+            float: left;
+            display: block;
+            /* color: #f2f2f2; */
+            text-align: center;
+            padding: 5px;
+            text-decoration: none;
+        }
+        
+        button.dropbtn {
+            float: left;
+            display: block;
+            /* color: #f2f2f2; */
+            text-align: center;
+            padding: 5px;
+            text-decoration: none;
+            font-size: 17px;
+            background-color: rgb(28, 29, 36);
+            border-radius: 3px;
+            border: none;
+        }
+        
+        button.dropbtn:hover {
+            background-color: rgb(22, 23, 29);
+            color: rgb(238, 238, 236);
+            border-radius: 3px;
+        }
+        
+        img {
+            width: 25px;
+            height: 25px;
+            float: left;
+            padding: 5px;
+            left: 10px;
+        }
+        
+        img:hover {
+            /* cursor: pointer; */
+            background-color: rgb(22, 23, 29);
+            border: 1px solid rgb(30, 134, 255, .6);
+        }
+        
+        img[class="dropbtn"]:hover {
+            border: 1px solid rgb(30, 134, 255, .6);
+        }
+        
+        .time {
+            float: right;
+            color: #f2f2f2;
+            padding-top: 9px;
+            padding-right: 20px;
+            height: 30px;
+            /* width: 30px; */
+            /* background: rgb(30, 134, 236, .09); */
+        }
+        
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+        
+        .dropdown .dropbtn {
+            cursor: pointer;
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: white;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+        
+        .navbar a:hover,
+        .dropdown:hover .dropbtn,
+        .dropbtn:focus {
+            /* background-color: rgb(22, 23, 29); */
+            /* box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .1); */
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
+        }
+        
+        .dropdown-content a {
+            background-color: rgb(28, 29, 36);
+            float: none;
+            /* color: #f2f2f2; */
+            padding: 12px 16px;
+            /* text-decoration: none; */
+            /* display: block; */
+            text-align: left;
+            /* font-variant: petite-caps; */
+            margin-top: 35px;
+            margin-bottom: -35px;
+            width: 100%;
+        }
+        
+        .dropdown-content a:hover {
+            background-color: rgb(22, 23, 29);
+        }
+        
+        .show {
+            display: block;
+        }
+        
+        .title {
+            /* font-size: 26px; */
+            /* font-variant: petite-caps; */
+            color: white;
+            /* text-align: center; */
+            /* margin-top: 10px; */
+            /* margin-bottom: 10px; */
+        }
+        
+        i {
+            font-size: 20px;
+            color: white;
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div class="dropdown">
+            <img class="dropbtn" onclick="myFunction()" src="D:\Documentos\Code\Html\data0008\kali-menu-kali-master-menu-icons\kali-menu-kali-master-menu-icons\menu-icons\32x32\apps\kali-menu.png">
+            <img src="D:\Documentos\Code\Html\data0008\kali-menu-kali-master-menu-icons\kali-menu-kali-master-menu-icons\menu-icons\32x32\apps\kali-volafox.png">
+            <img onclick="close()" src="D:\Documentos\Code\Html\data0008\kali-menu-kali-master-menu-icons\kali-menu-kali-master-menu-icons\menu-icons\32x32\linux-terminal-32.png">
+
+            <div class="dropdown-content" id="myDropdown">
+
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+            <a href="#" class="screen">1</a>
+            <a href="#" class="screen">2</a>
+            <a href="#" class="screen">3</a>
+            <a href="#" class="screen">4</a>
+        </div>
+        <span class="time" title="teste">&#160;</span>
+    </div>
+    <br>
+
+    <div class="terminal">
+        <div class="ribbon">
+            <span class="title">&#160;kali@kali: /home/kiq</span>
+            <div class="circle"><svg>
+                    <circle class="red" cx="10" cy="10" r="8" fill="rgb(242, 80, 86)" />
+                </svg>
+            </div>
+
+            <div class="circle"><svg>
+                    <circle class="green" cx="10" cy="10" r="8" fill="rgb(57, 234, 73" />
+                </svg>
+            </div>
+
+            <div class="circle"><svg>
+                    <circle class="yellow" cx="10" cy="10" r="8" fill="rgb(250, 197, 54)" />
+                </svg>
+            </div>
+        </div>
+        <div class="terminal-content">
+
+            <span style="color: blue;">┌──(</span><span style="color: red;">kali㉿kali</span><span style="color: blue;">)-[</span><span style="color: white;">/home/kiq</span><span style="color: blue;">]</span><br>
+            <span style="color: blue;">└─</span><span style="color: red;">#</span><span style="color: white;">
+            </span><span class="whoami" style="color: white;"><button onclick="whoami()"
+                    title="Informações pessoais">whoami</button></span><br>
+            <p class="resume" hidden>Olá, me chamo <span style="color: rgb(30, 134, 255);">Caique Pereira Pascoal</span>, nascido em São Paulo 04 de Abril de 1994, sou um profissional <span style="color: rgb(30, 134, 255);">formado em Segurança da Informação</span>, <span style="color: rgb(30, 134, 255);">pós-graduado em Ethical Hacking e CyberSecurity</span>,
+                e em
+                <span style="color: rgb(30, 134, 255);">Segurança Ofensiva e Inteligência Cibernética</span>. Durante minha trajetória assumi as responsabilidades de analisar os riscos corporativos relacionados à informação gerenciada por sistemas e infraestrutura
+                e por tomar medidas para proteger esta informação em critérios de confidencialidade, integridade e disponibilidade.
+            </p>
+            <br>
+            <span style="color: blue;">┌──(</span><span style="color: red;">kali㉿kali</span><span style="color: blue;">)-[</span><span style="color: white;">/home/kiq</span><span style="color: blue;">]</span><br>
+            <span style="color: blue;">└─</span><span style="color: red;">#</span><span style="color: white;">
+            </span><span class="contact" style="color: white;"><button onclick="contact()"
+                    title="E-mail e WhatsApp">contact</button></span><br>
+
+            <table class="info_contact" hidden>
+                <tr>
+                    <th>Celular/WhatsApp</th>
+                    <th>E-mail</th>
+                    <th>LinkedIn</th>
+                </tr>
+
+                <tr>
+                    <td><a href="https://api.whatsapp.com/send?phone=5511950293051&amp;text=Ol%C3%A1%20">(11)
+                            95029-3051</a>
+                    </td>
+                    <td><a href="mailto:caique.p.pascoal@outlook.com">caique.p.pascoal@outlook.com</a></td>
+                    <td><a href="https://www.linkedin.com/in/caiquepascoalsecinf/">Caique</a></td>
+                </tr>
+            </table><br>
+
+            <span style="color: blue;">┌──(</span><span style="color: red;">kali㉿kali</span><span style="color: blue;">)-[</span><span style="color: white;">/home/kiq</span><span style="color: blue;">]</span><br>
+            <span style="color: blue;">└─</span><span style="color: red;">#</span><span style="color: white;">
+            </span><span class="academic_training" style="color: white;"><button onclick="academic()"
+                    title="Formação Acadêmica">academic-training</button></span><br>
+            <table class="info_academic" hidden>
+                <tr>
+                    <th>Tipo</th>
+                    <th>Curso</th>
+                    <th>Universidade</th>
+                </tr>
+
+                <tr>
+                    <td>Graduação</td>
+                    <td>Segurança da Informação</td>
+                    <td>Uninove</td>
+                </tr>
+
+                <tr>
+                    <td>Pós Graduação</td>
+                    <td>Ethical Hacking e CyberSecurity</td>
+                    <td>Uniciv</td>
+                </tr>
+
+                <tr>
+                    <td>Pós Graduação</td>
+                    <td>Segurança Ofensiva e Inteligência Cibernética</td>
+                    <td>Uniciv</td>
+                </tr>
+            </table><br>
+
+            <span style="color: blue;">┌──(</span><span style="color: red;">kali㉿kali</span><span style="color: blue;">)-[</span><span style="color: white;">/home/kiq</span><span style="color: blue;">]</span><br>
+            <span style="color: blue;">└─</span><span style="color: red;">#</span><span style="color: white;">
+            </span><span class="certificates" style="color: white;"><button onclick="certs()"
+                    title="Em construção...">certificates</button></span><br>
+
+            <table class="info_cert" hidden>
+                <tr>
+                    <th>Certificação</th>
+                    <th>Entidade</th>
+                    <th>Identificador</th>
+                </tr>
+
+                <tr>
+                    <td>Fundamentos em Cibersegurança</td>
+                    <td>IBSEC</td>
+                    <td><button onclick="cert1()">31226083</button></td>
+                </tr>
+
+                <tr>
+                    <td>Ethical Hacking</td>
+                    <td>IBSEC</td>
+                    <td><button onclick="cert2()">26490436</button></td>
+                </tr>
+
+                <tr>
+                    <td>Boas Práticas de Cibersegurança</td>
+                    <td>IBSEC</td>
+                    <td><button onclick="cert3()">10488617</button></td>
+                </tr>
+            </table><br>
+
+            <span style="color: blue;">┌──(</span><span style="color: red;">kali㉿kali</span><span style="color: blue;">)-[</span><span style="color: white;">/home/kiq</span><span style="color: blue;">]</span><br>
+            <span style="color: blue;">└─</span><span style="color: red;">#</span><span style="color: white;">
+            </span><span class="construction" style="color: white;"><button onclick="construction()"
+                    title="Em construção...">Em construção...</button></span><br><br>
+
+            <span style="color: blue;">┌──(</span><span style="color: red;">kali㉿kali</span><span style="color: blue;">)-[</span><span style="color: white;">/home/kiq</span><span style="color: blue;">]</span><br>
+            <span style="color: blue;">└─</span><span style="color: red;">#</span><span style="color: white;">
+                    </span><span class="exit" style="color: white;"><button onclick="exit()"
+                            title="exit">exit</button></span><br><br>
+        </div>
+    </div>
+    </div>
+
+    <script>
+        // if div.terminal is hidden, click on div.terminal will show it
+        function show() {
+            var x = document.getElementById("terminal");
+            if (x.style.visibility === "hidden") {
+                x.style.display = "show";
+            }
+        }
+
+        function alert() {
+            alert("Em construção...");
+        }
+
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(e) {
+            if (!e.target.matches('.dropbtn')) {
+                var myDropdown = document.getElementById("myDropdown");
+                if (myDropdown.classList.contains('show')) {
+                    myDropdown.classList.remove('show');
+                }
+            }
+        }
+
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(e) {
+            if (!e.target.matches('.dropbtn')) {
+                var myDropdown = document.getElementById("myDropdown");
+                if (myDropdown.classList.contains('show')) {
+                    myDropdown.classList.remove('show');
+                }
+            }
+        }
+
+        window.onload = function() {
+            var d = new Date();
+            var h = d.getHours();
+            var m = d.getMinutes();
+            var s = d.getSeconds();
+            var time = document.getElementsByClassName("time")[0];
+            if (h < 10) {
+                h = "0" + h;
+            }
+            if (m < 10) {
+                m = "0" + m;
+            }
+            if (s < 10) {
+                s = "0" + s;
+            }
+            if (h == "00") {
+                h = "24";
+            }
+
+            time.innerHTML = h + ":" + m + ":" + s;
+            setInterval(function() {
+                var d = new Date();
+                var h = d.getHours();
+                var m = d.getMinutes();
+                var s = d.getSeconds();
+                time.innerHTML = h + ":" + m + ":" + s;
+            }, 1000);
+
+            var month = d.getMonth() + 1;
+            var day = d.getDate();
+            var year = d.getFullYear();
+            if (month < 10) {
+                month = "0" + month;
+            } else if (day < 10) {
+                day = "0" + day;
+            }
+
+            data = day + "/" + month + "/" + year;
+            time.setAttribute("title", data);
+        };
+    </script>
+</body>
+
+</html>
